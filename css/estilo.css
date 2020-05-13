@@ -7,7 +7,7 @@
 body {
   background-image: url(../img/Fundo.jpg);
   background-size: auto 100vh;
-  font-family: Arial;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   height:100vh;
 }
@@ -59,6 +59,7 @@ a:hover {
 .site-title {
   color: whitesmoke;
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .site-title {
@@ -68,9 +69,42 @@ a:hover {
 .site-subtitle {
   font-style: italic;
 }
+
+.portifolio {
+  color: whitesmoke;
+  padding: 2em;
+}
+
+.portifolio h2 {
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+
+.portifolio .grid {
+  display: grid;
+  gap: 1em;
+  text-align: center;
+  height:80vh;
+}
+
+@media (min-width: 620px) {
+  .portifolio .grid {
+    grid-template-columns: 280px 280px;
+  }
+}
+
+@media (min-width: 900px) {
+  .portifolio .grid {
+    grid-template-columns: 280px 280px 280px;
+    justify-content: space-around;
+  }
+}
   
 .img-portfolio {
   height: 180px;
-  width: 180px;
+  width: 280px;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 5%;
 }
   
