@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/estilo.css">
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/612eb019eb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&family=Source+Code+Pro&display=swap"
+    rel="stylesheet">
   <title>Yago Antonio - Site Pessoal</title>
 </head>
 
@@ -15,39 +17,97 @@
 
     <nav class="menu">
       <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#Projetos">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
 
-    <div>
+    <div class="titulo">
       <h1 class="site-title">Yago Antonio</h1>
       <h2 class="site-subtitle">Jr web developer</h2>
     </div>
-    
+
   </header>
 
-  <section id="Projetos" class="portifolio">
+  <section id="sobre" class="sobre">
+
+    <h2>Sobre</h2>
+
+    <figure class="avatar">
+      <img src="https://pbs.twimg.com/profile_images/1193325577362694144/EmRkG8do_400x400.jpg" alt="Yago Antonio">
+    </figure>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam similique esse nobis harum tempore eligendi hic. Ducimus sint necessitatibus vel ipsum. Ipsa eveniet nam eaque atque nesciunt pariatur totam!
+    </p>
+
+    <p>
+      Rerum laborum recusandae tempore natus, officia veritatis ducimus provident illum quod saepe corporis magnam excepturi, facilis itaque possimus blanditiis laudantium aut odio. Saepe quia nobis aperiam qui quos dolor quod.
+    </p>
+
+    <p>
+      Voluptates quidem debitis deserunt incidunt? Facilis facere adipisci tempore provident eveniet, vitae hic dolorum vel atque aperiam mollitia, quibusdam sed amet reprehenderit dicta voluptate, ratione cupiditate incidunt totam perferendis. Provident?
+    </p>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, reiciendis doloribus quae quod soluta iusto voluptas libero reprehenderit deleniti ullam, dolorum similique nisi aspernatur quisquam tempore dolor quis ducimus laudantium.
+    </p>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, nulla. Vitae, sint distinctio quod ab molestias ipsam exercitationem optio, eius temporibus quas possimus rem necessitatibus omnis itaque unde corporis! Pariatur.
+    </p>
+
+    <p>
+      Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">imersão css alura</a>.
+    </p>
+
+  </section>
+
+  <section id="projetos" class="portifolio">
     <h2>Projetos</h2>
 
     <div class="grid">
 
-      <figure>
-        <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-        <figcaption>eCommerce</figcaption>
-      </figure>
+      <div class="flip-card">
+
+        <div class="card">
+          <figure class="cardFrente">
+            <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+            <figcaption>eCommerce</figcaption>
+          </figure>
+    
+          <div class="cardVerso">
+            Oi, eu sou a parte de tras!
+          </div>
+
+        </div>
+      
+      </div>
+
+      <div class="flip-card">
+
+        <div class="card">
+
+          <figure class="cardFrente">
+            <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+            <figcaption>Mobile</figcaption>
+          </figure>
   
-      <figure>
-        <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-        <figcaption>Mobile</figcaption>
-      </figure>
+          <div class="cardVerso">
+            Oi, eu sou a parte de tras!
+          </div>
   
+        </div>
+
+      </div>
+
       <figure>
         <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
         <figcaption>Web design</figcaption>
       </figure>
-  
+
       <figure>
         <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
         <figcaption>Projetos pessoais</figcaption>
@@ -56,6 +116,29 @@
 
   </section>
 
+  <section id="contato" class="contato">
+
+    <h2>Contato</h2>
+
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/yagoantonio">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://twitter.com/Yagoantonio_">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a target="_blank" href="https://linkedin.com/in/yago-antonio">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/yago_antonio/">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailton:yago_antonio@live.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+  </section>
 
 </body>
 

@@ -18,6 +18,11 @@ body {
   }
 }
 
+html{
+  scroll-behavior: smooth;
+  animation-timing-function: ease;
+}
+
 header {
   height: 100vh;
   display: flex;
@@ -44,6 +49,13 @@ header {
 .menu a {
   padding: 10px 20px;
   display: block;
+  transition: background-color .5s, color .5s;
+}
+
+.menu a:active,
+.menu a:hover{
+  background-color: teal;
+  color: white;
 }
   
 a {
@@ -54,7 +66,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
-  
+
 .site-subtitle,
 .site-title {
   color: whitesmoke;
@@ -70,14 +82,47 @@ a:hover {
   font-style: italic;
 }
 
+.contato,
+.sobre,
 .portifolio {
-  color: whitesmoke;
+  color: rgb(192, 178, 178);
   padding: 2em;
+  min-height: 100vh;
+  margin-bottom: 100px;
 }
 
+.sobre h2,
+.contato h2,
 .portifolio h2 {
   margin-bottom: 0.8em;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.sobre p {
+  color: whitesmoke;
+  text-indent: 1.4em;
+  margin-bottom: 1.5em;
+  text-align: justify;
+  font-size: 1.4em;
+}
+
+.sobre a {
+  color: cyan;
+  text-decoration: underline;
+}
+
+.sobre .avatar {
+  float: right;
+  margin-left: 2em;
+  border-radius: 50%;
+}
+
+.sobre .avatar img{
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  height: 20em;
 }
 
 .portifolio .grid {
@@ -102,9 +147,55 @@ a:hover {
   
 .img-portfolio {
   height: 180px;
-  width: 280px;
+  width: 100%;
   object-fit: cover;
   object-position: bottom;
   border-radius: 5%;
 }
-  
+
+.flip-card {
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1.7s;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.cardFrente, 
+.cardVerso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5%;
+  backface-visibility: hidden;
+}
+
+.cardVerso {
+  background-color: whitesmoke;
+  color: black;
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+.contato .grid{
+  text-align: center;
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 7em;
+  transition: text-shadow .5s;
+
+}
+.contato a:active,
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+}
